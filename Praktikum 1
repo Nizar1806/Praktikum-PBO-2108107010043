@@ -1,0 +1,20 @@
+import java.util.Scanner;
+    public class BarangDiskon{
+    public static void main (String [] args) {
+
+        Scanner input = new Scanner (System.in);
+        int HargaAwal, Jumlah, HargaAkhir, Diskon, HargaTotal;
+
+        System.out.print("Masukkan Harga awal barang : ");
+        HargaAwal = input.nextInt();
+
+        System.out.print("Masukkan jumlah barang : ");
+        Jumlah = input.nextInt();
+
+        HargaAkhir = HargaAwal * Jumlah;
+        Diskon     = HargaAkhir * 15/100;
+        HargaTotal = HargaAkhir - Diskon; 
+
+        System.out.println("Total harga seluruh barang setelah mendapat diskon adalah = " +HargaTotal);
+    }
+}
